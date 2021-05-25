@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ultimate Encyclopedia</string>
+    <string name="home_title">Ultimate Encyclopedia</string>
+    <string name="search_fighters">Search Fighters</string>
+    <string name="view_all_fighters">View All Fighters</string>
+    <string name="view_favorites">View Favorites</string>
+    <string name="search_fighter">Search Fighter…</string>
+    <string name="content_description_fighter_picture">Fighter Picture</string>
+    <string name="content_description_expand_description_button">Expand Description Button</string>
+    <string name="content_description_smash_logo">Smash Logo</string>
+    <string name="content_description_hitbox_of_move">Hitbox of move</string>
+    <string name="damage_string">Damage:</string>
+    <string name="series_label"><u>Series</u></string>
+    <string name="fighter_label"><u>Fighter</u></string>
+    <string name="content_description_favorite_button">Favorite button</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="no_favorites_selected">No favorites selected! Go search for fighters!</string>
+</resources>
