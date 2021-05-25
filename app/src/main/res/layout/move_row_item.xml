@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp">
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
 
     <TextView
         android:id="@+id/tv_move_input"
@@ -26,34 +27,32 @@
         android:layout_width="40dp"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
+        android:ellipsize="end"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
-        android:marqueeRepeatLimit="marquee_forever"
         android:maxLines="3"
         android:textAlignment="gravity"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/tv_move_input"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_goneMarginStart="8dp"
         tools:text="2.2%/1.7%/4%" />
 
     <TextView
         android:id="@+id/tv_move_description"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:ellipsize="end"
+        android:layout_marginStart="106dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
-        android:maxLength="150"
         android:textAlignment="gravity"
         android:textColor="@color/black"
         android:textSize="12sp"
+        android:maxLines="3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/tv_move_damage"
         app:layout_constraintTop_toTopOf="parent"
-        app:maxLines="3"
         tools:text="The Punch + Punch + Kick combo from Super Mario 64: two punches followed by a jumping kick. The first and second hits can lock, and the general speed of the move makes it good as a grounded combo breaker or quick punish tool, as the first hit comes out on frame 2." />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

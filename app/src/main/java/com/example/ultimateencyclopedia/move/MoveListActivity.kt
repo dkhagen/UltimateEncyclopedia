@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -76,6 +77,12 @@ class MoveListActivity : BaseActivity(), MoveListAdapter.MoveListAdapterListener
     private fun setMoveList(moveList: ArrayList<MoveEntity>, fighter: FighterEntity) {
         val adapter = MoveListAdapter(moveList, this, fighter)
         val layoutManager = LinearLayoutManager(applicationContext)
+        rvMoveList.addItemDecoration(
+            DividerItemDecoration(
+                applicationContext,
+                layoutManager.orientation
+            )
+        )
         rvMoveList.layoutManager = layoutManager
         rvMoveList.itemAnimator = DefaultItemAnimator()
         rvMoveList.adapter = adapter
