@@ -30,6 +30,7 @@ class MoveListActivity : BaseActivity(), MoveListAdapter.MoveListAdapterListener
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fighter_detail)
+        hideStatusBar()
         fighterName = intent.getStringExtra(ENUM_FIGHTER)!!
         val fighter = grabFighterByName(fighterName)
         if (fighter != null) {
@@ -65,7 +66,7 @@ class MoveListActivity : BaseActivity(), MoveListAdapter.MoveListAdapterListener
 
         Glide.with(this)
             .load(fighter.image)
-            .apply(RequestOptions.circleCropTransform())
+            .apply(RequestOptions.fitCenterTransform())
             .into(ivFighterImage)
     }
 

@@ -7,15 +7,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_smash"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_smash_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UltimateEncyclopedia">
         <activity android:name=".home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -38,6 +37,10 @@
 
         <activity
             android:name=".FavoritesActivity"
+            android:theme="@style/Theme.UltimateEncyclopedia" />
+
+        <activity
+            android:name=".home.BaseActivity"
             android:theme="@style/Theme.UltimateEncyclopedia" />
     </application>
 

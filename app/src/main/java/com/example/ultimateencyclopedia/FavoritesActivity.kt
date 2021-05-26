@@ -24,6 +24,7 @@ class FavoritesActivity : BaseActivity(), FighterAdapter.FighterAdapterListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_favorites)
+        hideStatusBar()
         bindViews()
         startBackgroundAnimation()
         setUpRecyclerView()

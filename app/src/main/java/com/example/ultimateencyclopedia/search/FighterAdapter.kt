@@ -65,7 +65,7 @@ class FighterAdapter(
 
         Glide.with(context)
             .load(fighter.image)
-            .apply(RequestOptions.circleCropTransform())
+            .apply(RequestOptions.fitCenterTransform())
             .into(holder.fighterImage)
     }
 

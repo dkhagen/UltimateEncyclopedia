@@ -24,6 +24,7 @@ class SearchActivity : BaseActivity(), FighterAdapter.FighterAdapterListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_search)
+        hideStatusBar()
         bindViews()
         startBackgroundAnimation()
         setUpRecyclerView()

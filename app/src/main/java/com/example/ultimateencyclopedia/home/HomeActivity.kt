@@ -29,6 +29,7 @@ class HomeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_home)
+        hideStatusBar()
         startBackgroundAnimation()
         bindViews()
         loadHomeImage()

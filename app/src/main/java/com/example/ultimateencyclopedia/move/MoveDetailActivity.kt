@@ -22,6 +22,7 @@ class MoveDetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_move)
+        hideStatusBar()
         bindViews()
         val fighterName = intent.getStringExtra(ENUM_FIGHTER)!!
         val fighter = Utils.retrieveFighterByName(fighterName, applicationContext)
