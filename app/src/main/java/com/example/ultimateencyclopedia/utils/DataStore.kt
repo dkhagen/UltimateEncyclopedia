@@ -23,7 +23,7 @@ class DataStore {
         }
 
         fun getCacheTimestamp(context: Context): Long {
-            return getSharedPreferences(context).getLong(CACHE_TIMESTAMP, -1)
+            return getSharedPreferences(context).getLong(CACHE_TIMESTAMP, -1L)
         }
     }
 }

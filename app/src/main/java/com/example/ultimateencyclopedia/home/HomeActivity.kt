@@ -61,7 +61,9 @@ class HomeActivity : BaseActivity() {
 
     private fun downloadDataIfNecessary() {
         GlobalScope.launch(Dispatchers.IO) {
-            if (shouldDownloadFighters()) {
+            val shouldDownload = shouldDownloadFighters()
+            Log.i(this@HomeActivity.javaClass.name, shouldDownload.toString())
+            if (shouldDownload) {
                 Utils.deleteAllData(applicationContext)
                 Utils.downloadFighters(applicationContext)
                 Utils.downloadMoves(applicationContext)
@@ -73,7 +75,7 @@ class HomeActivity : BaseActivity() {
         val storedTimestamp = DataStore.getCacheTimestamp(applicationContext)
         val remoteTimestamp = Utils.downloadTimestamp(applicationContext)
         DataStore.storeCacheTimestamp(remoteTimestamp, applicationContext)
-        return storedTimestamp < remoteTimestamp
+        return storedTimestamp < remoteTimestamp || storedTimestamp == -1L
     }
 
     private fun openSearch(view: View) {

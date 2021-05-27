@@ -49,6 +49,7 @@ class MoveDetailActivity : BaseActivity() {
 
             Glide.with(applicationContext)
                 .load(move.hitbox)
+                .error(R.drawable.ic_broken_image)
                 .into(ivHitbox)
         }
     }

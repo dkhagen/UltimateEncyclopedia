@@ -15,4 +15,5 @@
     <string name="content_description_favorite_button">Favorite button</string>
     <string name="favorites_title">Favorites</string>
     <string name="no_favorites_selected">No favorites selected! Go search for fighters!</string>
+    <string name="content_description_open_move_detail">Open move detail page</string>
 </resources>

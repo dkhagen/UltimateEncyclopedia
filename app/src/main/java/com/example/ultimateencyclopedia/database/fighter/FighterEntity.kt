@@ -9,7 +9,7 @@ data class FighterEntity(
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") var id: Int = 0,
     @ColumnInfo(name = "fighter_name") val name: String?,
     @ColumnInfo(name = "fighter_series") val series: String?,
-    @ColumnInfo(name = "fighter_rank") val rank: Int?,
+    @ColumnInfo(name = "fighter_rank") val rank: Double?,
     @ColumnInfo(name = "fighter_image") val image: String?,
     @ColumnInfo(name = "is_favorite") val isFavorite: Boolean = false
 )
