@@ -43,7 +43,7 @@
         android:id="@+id/tv_move_description"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="106dp"
+        android:layout_marginStart="112dp"
         android:layout_marginEnd="46dp"
         android:ellipsize="end"
         android:fontFamily="sans-serif-medium"
@@ -63,10 +63,10 @@
         android:layout_height="match_parent"
         android:layout_marginEnd="8dp"
         android:background="@color/colorTransparent"
+        android:contentDescription="@string/content_description_open_move_detail"
         android:src="@drawable/ic_right_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/content_description_open_move_detail" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
