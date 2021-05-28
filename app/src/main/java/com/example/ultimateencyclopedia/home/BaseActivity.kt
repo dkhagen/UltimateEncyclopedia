@@ -24,13 +24,12 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        @Suppress("DEPRECATION")
-
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
     }
 
+    @Suppress("DEPRECATION")
     fun hideStatusBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
