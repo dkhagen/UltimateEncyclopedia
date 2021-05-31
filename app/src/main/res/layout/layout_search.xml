@@ -4,7 +4,8 @@
     android:id="@+id/cl_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_animation">
+    android:background="@drawable/gradient_animation"
+    android:paddingTop="16dp">
 
     <EditText
         android:id="@+id/et_query"
@@ -13,13 +14,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/black"
         android:autofillHints="fighterName,fighterSeries"
+        android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:hint="@string/search_fighter"
         android:inputType="text"
         android:textColor="@color/black"
+        android:textColorHint="@color/colorDarkGrey"
         android:textCursorDrawable="@null"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -79,7 +81,8 @@
         android:id="@+id/rv_fighters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginBottom="8dp"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@id/et_query" />
 

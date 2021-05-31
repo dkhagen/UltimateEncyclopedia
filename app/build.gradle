@@ -75,4 +75,7 @@ dependencies {
 
     // ZoomLayout
     implementation 'com.otaliastudios:zoomlayout:1.8.0'
+
+    // Circular Progress Drawable
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }

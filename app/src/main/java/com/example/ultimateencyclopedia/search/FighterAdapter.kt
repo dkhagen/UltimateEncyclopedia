@@ -9,11 +9,14 @@ import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.ultimateencyclopedia.R
 import com.example.ultimateencyclopedia.search.FighterAdapter.FighterViewHolder
 import com.example.ultimateencyclopedia.database.fighter.FighterEntity
+import com.example.ultimateencyclopedia.utils.Utils
+import com.google.android.material.progressindicator.CircularProgressIndicator
 
 class FighterAdapter(
     private val context: Context,
@@ -65,6 +68,7 @@ class FighterAdapter(
 
         Glide.with(context)
             .load(fighter.image)
+            .placeholder(Utils.getProgressIndicator(context))
             .apply(RequestOptions.fitCenterTransform())
             .into(holder.fighterImage)
     }

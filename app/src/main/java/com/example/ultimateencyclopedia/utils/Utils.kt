@@ -1,8 +1,10 @@
 package com.example.ultimateencyclopedia.utils
 
 import android.content.Context
+import android.content.res.Resources
 import android.util.Log
 import androidx.room.Room
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.example.ultimateencyclopedia.database.UltimateDatabase
 import com.example.ultimateencyclopedia.database.UltimateDatabase.Companion.getUltimateDatabase
 import com.example.ultimateencyclopedia.database.fighter.FighterEntity
@@ -132,6 +134,18 @@ class Utils {
         private fun insertMoveList(data: List<MoveEntity>, context: Context) {
             val dao = getUltimateDatabase(context)?.moveDao()
             dao?.insertListOfMoves(data)
+        }
+
+        fun toPx(dp: Int): Int {
+            return (dp * Resources.getSystem().displayMetrics.density).toInt()
+        }
+
+        fun getProgressIndicator(context: Context): CircularProgressDrawable {
+            return CircularProgressDrawable(context).apply {
+                strokeWidth = 5f
+                centerRadius = 30f
+                start()
+            }
         }
     }
 }

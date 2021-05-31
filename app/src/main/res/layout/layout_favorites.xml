@@ -4,7 +4,8 @@
     android:id="@+id/cl_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_animation">
+    android:background="@drawable/gradient_animation"
+    android:paddingTop="22dp">
 
     <TextView
         android:id="@+id/tv_favorites_title"
@@ -73,17 +74,17 @@
         android:id="@+id/tv_no_favorites_selected"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
         android:layout_marginTop="80dp"
-        android:visibility="gone"
+        android:gravity="center"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:gravity="center"
+        android:text="@string/no_favorites_selected"
+        android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="italic"
-        android:text="@string/no_favorites_selected"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cl_label_container" />
 
     <androidx.recyclerview.widget.RecyclerView
