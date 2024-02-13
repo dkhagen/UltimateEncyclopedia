@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_smash_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UltimateEncyclopedia">
-        <activity android:name=".home.HomeActivity">
+        <activity android:name=".home.HomeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
